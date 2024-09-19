@@ -1,4 +1,46 @@
 .main{
-  background-color: var(--white-color);
   height: 100vh;
+}
+.navigation__section{
+  overflow: hidden;
+  position: relative;
+}
+.nav{
+  display: flex;
+  justify-content: center;
+}
+.menu__hamburger{
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+
+}
+.menu__hamburger > span{
+  width: 100px;
+  height: 3px;
+  background-color: black;
+  margin-top: 10px;
+}
+@media screen and (max-width: 768px){
+  .menu__hamburger{
+    display: flex;
+  }
+  .nav{
+    transform: translate(100%);
+    transition-duration: 500ms;
+  }
+  .nav.open{
+    transform: translate(0);
+    transition-duration: 500ms;
+  }
+  .menu__hamburger.open{
+    left: 10%;
+    transform: translateX(-100%) ;
+    transition-duration: 500ms;
+  }
+
 }

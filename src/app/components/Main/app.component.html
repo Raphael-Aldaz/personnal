@@ -1,10 +1,15 @@
 <main class="main">
+  <div class="navigation__section">
+    <app-navigation class="nav"></app-navigation>
+    <div class="menu__hamburger" (click)="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+
   <div class="content">
 
   </div>
 </main>
-
-
-
-
 <router-outlet></router-outlet>
