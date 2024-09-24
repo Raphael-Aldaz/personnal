@@ -1,0 +1,9 @@
+<div class="tabs tab-left">
+  <nav>
+    @for (item of navigationItems; track $index) {
+    <a [className]="item.color" [routerLinkActive]="['active']" routerLink="{{item.route}}">{{item.name}}
+    </a>
+    }
+  </nav>
+</div>
+<router-outlet></router-outlet>
