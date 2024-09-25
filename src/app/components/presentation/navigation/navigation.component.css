@@ -72,6 +72,11 @@ nav a.active {
 .--blue-color::before {
   background: var(--blue-color);
 }
+@media screen and (max-width: 768px) {
+  .tabs {
+    display: none;
+  }
+}
 
 
 
